@@ -10,7 +10,8 @@ using (HttpClient client = new HttpClient())
         Console.WriteLine(resposta);
 
         var musicas = JsonSerializer.Deserialize<List<Musica>>(resposta);
-        Console.WriteLine(musicas.Count);
+        //Console.WriteLine(musicas.Count);
+        musicas[0].ExibitDetalhesDaMusica();
        
     } catch (Exception ex) 
     {
