@@ -5,10 +5,8 @@
     {
         var resposta = await client.GetStringAsync("https://guilhermeonrails.github.io/api-csharp-songs/songs.json");
         Console.WriteLine(resposta);
-    } catch (Exception message) 
+    } catch (Exception ex) 
     {
-        Console.WriteLine($"Erro ao realizar, a requisição da API {message}");
+        Console.WriteLine($"Erro ao realizar, a requisição da API {ex.Message}");
     }
-
-   
 }
