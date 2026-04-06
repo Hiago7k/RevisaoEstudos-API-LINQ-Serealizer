@@ -8,4 +8,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Modelos\" />
+    <Folder Include="Filtros\" />
+  </ItemGroup>
+
 </Project>
