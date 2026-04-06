@@ -1,4 +1,5 @@
-﻿using RevisaoEstudos_API_LINQ_Serealizer.Modelos;
+﻿using RevisaoEstudos_API_LINQ_Serealizer.Filtrosl;
+using RevisaoEstudos_API_LINQ_Serealizer.Modelos;
 using System.Text.Json;
 
 using (HttpClient client = new HttpClient())
@@ -7,12 +8,10 @@ using (HttpClient client = new HttpClient())
     try
     {
         var resposta = await client.GetStringAsync("https://guilhermeonrails.github.io/api-csharp-songs/songs.json");
-        Console.WriteLine(resposta);
+        var musicas = JsonSerializer.Deserialize<List<Musica>>(resposta)!;
+        //musicas[1998].ExibitDetalhesDaMusica();
+        LinqFilter.FiltrarTodosOsGeneros(musicas);
 
-        var musicas = JsonSerializer.Deserialize<List<Musica>>(resposta);
-        //Console.WriteLine(musicas.Count);
-        musicas[0].ExibitDetalhesDaMusica();
-       
     } catch (Exception ex) 
     {
         Console.WriteLine($"Erro ao realizar, a requisição da API {ex.Message}");
