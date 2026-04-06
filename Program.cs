@@ -1,4 +1,5 @@
-﻿using RevisaoEstudos_API_LINQ_Serealizer.Filtrosl;
+﻿using RevisaoEstudos_API_LINQ_Serealizer.Filtros;
+using RevisaoEstudos_API_LINQ_Serealizer.Filtrosl;
 using RevisaoEstudos_API_LINQ_Serealizer.Modelos;
 using System.Text.Json;
 
@@ -9,8 +10,8 @@ using (HttpClient client = new HttpClient())
     {
         var resposta = await client.GetStringAsync("https://guilhermeonrails.github.io/api-csharp-songs/songs.json");
         var musicas = JsonSerializer.Deserialize<List<Musica>>(resposta)!;
-        //musicas[1998].ExibitDetalhesDaMusica();
-        LinqFilter.FiltrarTodosOsGeneros(musicas);
+        //  LinqFilter.FiltrarTodosOsGeneros(musicas);
+        LinqOrder.FiltrarPorArtista(musicas);
 
     } catch (Exception ex) 
     {
