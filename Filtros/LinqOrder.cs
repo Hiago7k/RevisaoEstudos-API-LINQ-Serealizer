@@ -11,7 +11,7 @@ internal class LinqOrder
 {
     public static void FiltrarPorArtista(List<Musica> musicas) 
     {
-        var todosOsArtista = musicas.OrderBy(musicas => musicas.Artistia).Select(musicas => musicas.Artistia).Distinct().ToList()!;
+        var todosOsArtista = musicas.OrderBy(musicas => musicas.Artista).Select(musicas => musicas.Artista).Distinct().ToList()!;
         Console.WriteLine("Exibindo Artistia Ordenados");
 
         foreach (var artistas in todosOsArtista) 
