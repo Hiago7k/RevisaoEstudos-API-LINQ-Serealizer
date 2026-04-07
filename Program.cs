@@ -22,6 +22,7 @@ using (HttpClient client = new HttpClient())
         hiago.AdicionarMusicaNaLista(musicas[99]);
         hiago.AdicionarMusicaNaLista(musicas[1]);
         hiago.ExibirMusicasPreferidas();
+        hiago.GearArquivoTxt();
 
         MusicasPreferidas nath = new("Nath List");
         nath.AdicionarMusicaNaLista(musicas[1]);
