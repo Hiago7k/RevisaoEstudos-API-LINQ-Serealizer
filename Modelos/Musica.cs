@@ -26,8 +26,6 @@ internal class Musica
         }
     }
 
-    
-   
 
     public void ExibitDetalhesDaMusica() 
     {
