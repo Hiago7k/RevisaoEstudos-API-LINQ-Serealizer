@@ -15,8 +15,11 @@ using (HttpClient client = new HttpClient())
         LinqFilter.FiltrarMusicasDeUmArtista(musicas, "Post Malone");
 
 
-    } catch (Exception ex) 
+    }
+    catch (Exception ex)
     {
         Console.WriteLine($"Erro ao realizar, a requisição da API {ex.Message}");
     }
 }
+
+

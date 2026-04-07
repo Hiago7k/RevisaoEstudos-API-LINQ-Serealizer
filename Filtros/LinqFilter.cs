@@ -30,7 +30,6 @@ internal class LinqFilter
         }
     }
 
-
     public static void FiltrarMusicasDeUmArtista(List<Musica> musicas, string nomeDoArtista) 
     {
         var musicasDeUmArtista = musicas.Where(musica => musica.Artista!.Equals(nomeDoArtista)).ToList().Distinct();
