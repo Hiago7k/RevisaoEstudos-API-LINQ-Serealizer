@@ -13,9 +13,24 @@ using (HttpClient client = new HttpClient())
         //LinqOrder.FiltrarPorArtista(musicas);
         //LinqFilter.FiltrarArtistasPorGeneroMusical(musicas, "rock");
         //LinqFilter.FiltrarMusicasDeUmArtista(musicas, "Post Malone");
-        LinqFilter.FiltrarMusicasPorAno(musicas, 2014);
+        // LinqFilter.FiltrarMusicasPorAno(musicas, 2014);
 
+        MusicasPreferidas hiago = new MusicasPreferidas("Hiago List");
+        hiago.AdicionarMusicaNaLista(musicas[23]);
+        hiago.AdicionarMusicaNaLista(musicas[10]);
+        hiago.AdicionarMusicaNaLista(musicas[123]);
+        hiago.AdicionarMusicaNaLista(musicas[99]);
+        hiago.AdicionarMusicaNaLista(musicas[1]);
+        hiago.ExibirMusicasPreferidas();
 
+        MusicasPreferidas nath = new("Nath List");
+        nath.AdicionarMusicaNaLista(musicas[1]);
+        nath.AdicionarMusicaNaLista(musicas[11]);
+        nath.AdicionarMusicaNaLista(musicas[12]);
+        nath.AdicionarMusicaNaLista(musicas[222]);
+        nath.AdicionarMusicaNaLista(musicas[22]);
+
+        nath.ExibirMusicasPreferidas();
     }
     catch (Exception ex)
     {
