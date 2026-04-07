@@ -29,8 +29,9 @@ using (HttpClient client = new HttpClient())
         nath.AdicionarMusicaNaLista(musicas[12]);
         nath.AdicionarMusicaNaLista(musicas[222]);
         nath.AdicionarMusicaNaLista(musicas[22]);
-
         nath.ExibirMusicasPreferidas();
+
+        nath.GerarArquivoJson();
     }
     catch (Exception ex)
     {

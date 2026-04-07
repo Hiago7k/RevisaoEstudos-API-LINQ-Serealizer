@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace RevisaoEstudos_API_LINQ_Serealizer.Modelos;
@@ -30,5 +31,19 @@ internal class MusicasPreferidas
             Console.WriteLine($" {musica.Nome} | {musica.Artista}");
         }
         Console.WriteLine();
+    }
+
+
+    public void GerarArquivoJson() 
+    {
+        string json = JsonSerializer.Serialize(new
+        {
+            nome = Nome,
+            musicas = ListaDeMusicasFavoritas
+        });
+
+        string nomeDoArquvio = $"musicas-favoritas-{Nome}.Json";
+        File.WriteAllText(nomeDoArquvio, json);
+        Console.WriteLine($"O Arquivo Json foi criado com sucesso! {Path.GetFullPath(nomeDoArquvio)} ");
     }
 }
