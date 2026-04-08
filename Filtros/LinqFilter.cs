@@ -76,7 +76,7 @@ internal class LinqFilter
                     Console.WriteLine("D#");
                 break;
                 case 4:
-                    Console.WriteLine("#");
+                    Console.WriteLine("E");
                 break;
                 case 5:
                     Console.WriteLine("F");
