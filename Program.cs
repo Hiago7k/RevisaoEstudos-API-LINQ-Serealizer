@@ -15,7 +15,7 @@ using (HttpClient client = new HttpClient())
         // LinqFilter.FiltrarMusicasDeUmArtista(musicas, "Post Malone");
         // LinqFilter.FiltrarMusicasPorAno(musicas, 2014);
 
-        LinqFilter.FiltrarPorKeyMusical(musicas, 0);
+        LinqFilter.FiltrarPorKeyMusical(musicas, 3);
 
         //MusicasPreferidas hiago = new MusicasPreferidas("Hiago List");
         //hiago.AdicionarMusicaNaLista(musicas[23]);

@@ -27,14 +27,8 @@ internal class Musica
     }
     [JsonPropertyName("key")]
     public int KeyMusical { get; set; }
+  
 
-    //public int Key 
-    //{
-    //    get 
-    //    {
-    //        return int.Parse(KeyMusical!);
-    //    }
-    //}
 
 
     public void ExibitDetalhesDaMusica() 
