@@ -20,15 +20,15 @@ internal class LinqFilter
     }
 
 
-    public static void FiltrarArtistasPorGeneroMusical(List<Musica> musicas, string genero) 
-    {
-        var artistasPorGeneroMusical = musicas.Where(musica => musica.Genero.Contains(genero)).Select(musica => musica.Artista).ToList().Distinct();
+    //public static void FiltrarArtistasPorGeneroMusical(List<Musica> musicas, string genero) 
+    //{
+    //    var artistasPorGeneroMusical = musicas.Where(musica => musica.Genero.Contains(genero)).Select(musica => musica.Artista).ToList().Distinct();
 
-        foreach (var generoMusical in artistasPorGeneroMusical)
-        {
-            Console.WriteLine($"- {generoMusical}");
-        }
-    }
+    //    foreach (var generoMusical in artistasPorGeneroMusical)
+    //    {
+    //        Console.WriteLine($"- {generoMusical}");
+    //    }
+    //}
 
     public static void FiltrarMusicasDeUmArtista(List<Musica> musicas, string nomeDoArtista) 
     {
@@ -51,8 +51,17 @@ internal class LinqFilter
             Console.WriteLine($"- {musicaAno}");
         }
 
+    }
 
+    public static void FiltrarPorKeyMusical(List<Musica> musicas, int key) 
+    {
+        var musicaKey = musicas.Where(musica => musica.KeyMusical == key).OrderBy(musica => musica.Nome).Select(musica => musica.KeyMusical).ToList();
+        Console.WriteLine($"Musicas cujo a key é {key}");
 
+        foreach (var musicao in musicaKey) 
+        {
+            Console.WriteLine($"- {musicao}");
+        }
 
     }
 

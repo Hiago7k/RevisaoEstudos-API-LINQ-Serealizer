@@ -11,28 +11,29 @@ using (HttpClient client = new HttpClient())
         var musicas = JsonSerializer.Deserialize<List<Musica>>(resposta)!;
         //  LinqFilter.FiltrarTodosOsGeneros(musicas);
         //LinqOrder.FiltrarPorArtista(musicas);
-        //LinqFilter.FiltrarArtistasPorGeneroMusical(musicas, "rock");
-        //LinqFilter.FiltrarMusicasDeUmArtista(musicas, "Post Malone");
+        // LinqFilter.FiltrarArtistasPorGeneroMusical(musicas, "rock");
+        // LinqFilter.FiltrarMusicasDeUmArtista(musicas, "Post Malone");
         // LinqFilter.FiltrarMusicasPorAno(musicas, 2014);
 
-        MusicasPreferidas hiago = new MusicasPreferidas("Hiago List");
-        hiago.AdicionarMusicaNaLista(musicas[23]);
-        hiago.AdicionarMusicaNaLista(musicas[10]);
-        hiago.AdicionarMusicaNaLista(musicas[123]);
-        hiago.AdicionarMusicaNaLista(musicas[99]);
-        hiago.AdicionarMusicaNaLista(musicas[1]);
-        hiago.ExibirMusicasPreferidas();
-        hiago.GearArquivoTxt();
+        LinqFilter.FiltrarPorKeyMusical(musicas, 0);
 
-        MusicasPreferidas nath = new("Nath List");
-        nath.AdicionarMusicaNaLista(musicas[1]);
-        nath.AdicionarMusicaNaLista(musicas[11]);
-        nath.AdicionarMusicaNaLista(musicas[12]);
-        nath.AdicionarMusicaNaLista(musicas[222]);
-        nath.AdicionarMusicaNaLista(musicas[22]);
-        nath.ExibirMusicasPreferidas();
+        //MusicasPreferidas hiago = new MusicasPreferidas("Hiago List");
+        //hiago.AdicionarMusicaNaLista(musicas[23]);
+        //hiago.AdicionarMusicaNaLista(musicas[10]);
+        //hiago.AdicionarMusicaNaLista(musicas[123]);
+        //hiago.AdicionarMusicaNaLista(musicas[99]);
+        //hiago.AdicionarMusicaNaLista(musicas[1]);
+        //hiago.ExibirMusicasPreferidas();
+        //hiago.GearArquivoTxt();
 
-        nath.GerarArquivoJson();
+        //MusicasPreferidas nath = new("Nath List");
+        //nath.AdicionarMusicaNaLista(musicas[1]);
+        //nath.AdicionarMusicaNaLista(musicas[11]);
+        //nath.AdicionarMusicaNaLista(musicas[12]);
+        //nath.AdicionarMusicaNaLista(musicas[222]);
+        //nath.AdicionarMusicaNaLista(musicas[22]);
+        //nath.ExibirMusicasPreferidas();
+        //nath.GerarArquivoJson();
     }
     catch (Exception ex)
     {
@@ -40,5 +41,4 @@ using (HttpClient client = new HttpClient())
     }
 }
 
-// Desafio exibir propriedade KEY, onde cada numero representa um sinbolo musical
 
