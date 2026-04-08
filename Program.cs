@@ -13,7 +13,7 @@ using (HttpClient client = new HttpClient())
         //LinqOrder.FiltrarPorArtista(musicas);
         // LinqFilter.FiltrarArtistasPorGeneroMusical(musicas, "rock");
         // LinqFilter.FiltrarMusicasDeUmArtista(musicas, "Post Malone");
-        // LinqFilter.FiltrarMusicasPorAno(musicas, 2014);
+      //   LinqFilter.FiltrarMusicasPorAno(musicas, 2014);
 
         LinqFilter.FiltrarPorKeyMusical(musicas, 3);
 
