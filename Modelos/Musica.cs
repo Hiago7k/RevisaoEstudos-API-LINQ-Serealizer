@@ -29,8 +29,6 @@ internal class Musica
     public int KeyMusical { get; set; }
   
 
-
-
     public void ExibitDetalhesDaMusica() 
     {
         Console.WriteLine("Realizando requsição...");

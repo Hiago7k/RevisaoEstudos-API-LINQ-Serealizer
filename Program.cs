@@ -34,6 +34,7 @@ using (HttpClient client = new HttpClient())
         //nath.AdicionarMusicaNaLista(musicas[22]);
         //nath.ExibirMusicasPreferidas();
         //nath.GerarArquivoJson();
+        Console.WriteLine("Strak");
     }
     catch (Exception ex)
     {
