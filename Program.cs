@@ -36,6 +36,7 @@ using (HttpClient client = new HttpClient())
         //nath.GerarArquivoJson();
         Console.WriteLine("Strak");
         Console.WriteLine("Strak");
+        Console.WriteLine("Strak");
     }
     catch (Exception ex)
     {
