@@ -34,22 +34,7 @@ using (HttpClient client = new HttpClient())
         //nath.AdicionarMusicaNaLista(musicas[22]);
         //nath.ExibirMusicasPreferidas();
         //nath.GerarArquivoJson();
-        Console.WriteLine("Strak");
-        Console.WriteLine("Strak");
-        Console.WriteLine("Strak");
-        Console.WriteLine("Strak");
-        Console.WriteLine("Strak");
-        Console.WriteLine("Strak");
-        Console.WriteLine("Strak");
-        Console.WriteLine("Strak");
-        Console.WriteLine("SSStrak");
-        Console.WriteLine("SSStrak");
-        Console.WriteLine("SSStrak");
-        Console.WriteLine("Strak");
-        Console.WriteLine("Strak");
-        Console.WriteLine("Strak");
-        Console.WriteLine("Strak");
-        Console.WriteLine("Strak");
+        Console.WriteLine("Feradio");
     }
     catch (Exception ex)
     {
