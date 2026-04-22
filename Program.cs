@@ -35,6 +35,7 @@ using (HttpClient client = new HttpClient())
         //nath.ExibirMusicasPreferidas();
         //nath.GerarArquivoJson();
         Console.WriteLine("Feradio");
+        Console.WriteLine("Feradio");
     }
     catch (Exception ex)
     {
